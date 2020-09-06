@@ -13,12 +13,12 @@
 }
 body{
     background: #000;
-/* background-image:url("images/371812620_FIREWORKS_400.gif");
+background-image:url("images/371812620_FIREWORKS_400.gif");
 mix-blend-mode: screen;
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
-} */
+}
 .overall .container{
     background:transparent;
     height: 100vh;

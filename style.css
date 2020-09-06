@@ -1,0 +1,151 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Kumar+One+Outline&family=Lexend+Mega&family=Londrina+Shadow&display=swap');
+
+:root{
+    --main_color:black;
+    --text_color:white;
+}
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+/* background-image:url("images/371812620_FIREWORKS_400.gif");
+mix-blend-mode: screen;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+} */
+.overall .container{
+    background:transparent;
+    height: 100vh;
+    width: 100vw;
+    margin-top: 40px;
+}
+.navbar{
+position: relative;
+}
+
+.navbar .logo-brand h2{
+ font-size: 25px;
+ color: var(--text_color);
+ font-family: 'Bungee Shade', cursive;
+font-family: 'Kumar One Outline', cursive;
+}
+.navbar .menu ul{
+    list-style: none;
+}
+.navbar .menu li{
+ color: var(--text_color);
+ display: inline-block;
+ text-transform: uppercase;
+ font-family: 'Bungee Shade', cursive;
+font-family: 'Kumar One Outline', cursive;
+font-family: 'Lexend Mega', sans-serif;
+
+}
+.navbar .menu li a{
+    margin-right: 30px;
+
+}
+.menu_bar {
+    position: absolute;
+    font: 20px;
+    top:0;
+    right: 0;
+    color:white;
+    visibility: hidden;
+}
+.menu.active{
+    position: absolute;
+    top:80%;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    background:white;
+    display: block;
+    color:black;
+}
+.item.active li{
+    display: block;
+    color: black;
+    
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.content img{
+    /* position: absolute; */
+    width: 400px;
+    height: 400px;
+    /* right:20%;
+    z-index: 10; */
+
+}
+.content .content_title{
+ font-size: 80px;
+ font-family: 'Bungee Shade', cursive;
+font-family: 'Kumar One Outline', cursive;
+font-family: 'Lexend Mega', sans-serif;
+font-family: 'Londrina Shadow', cursive;
+color:var(--text_color);   
+text-transform: uppercase;
+font-weight: 600;
+letter-spacing: 10px;
+word-spacing: 10px;
+ position: relative;
+ /*
+top: 30%;
+left: 15%;
+z-index: 9; */
+}
+.bottom_desc{
+    position: absolute;
+    bottom: 0;
+    left:94px;
+    display: flex;
+
+}
+.bottom_desc h1{
+    font-size:20px;
+    color:white;
+    padding: 20px;
+}
+@media only screen and (max-width:779px){
+    .content{
+        display: grid;
+        place-items: center;
+        margin:0;
+       
+    }
+    .navbar .menu ul{
+        display: none;
+    }
+    .content img{
+        /* position: absolute; */
+        width: 224px;
+        height: 235px;
+        /* right:20%;
+        z-index: 10; */
+    
+    }
+    .content .content_title{
+        font-size: 40px;
+        
+       }
+       .navbar .logo-brand h2 {
+        font-size: 13px;
+       }
+       .menu_bar {
+    
+    visibility: visible;
+    }
+        
+}
